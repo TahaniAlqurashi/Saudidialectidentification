@@ -56,7 +56,8 @@ If you use this code or data, please cite:
 
 ## License
 
-See LICENSE file. Corpus originally introduced by Alqurashi (2022); consult the original source for corpus-specific usage terms.
+See LICENSE file. Code is MIT licensed. The dataset is licensed CC BY-NC 4.0 (non-commercial use, attribution required); please cite Alqurashi (2022) when 
+reusing it.
 
 ## Contact
 
