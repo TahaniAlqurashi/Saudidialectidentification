@@ -20,7 +20,7 @@ This project evaluates transformer-based language models on four-way Saudi Arabi
 ├── val_dialectdf.csv                             # 377 samples (10%)
 ├── test_dialectdf.csv                            # 377 samples (10%)
 ├── Language_Identification_Fine_Tuning_LLM.ipynb # Main experiments: 4-way, 3-way, binary fine-tuning
-└── Few-Shot_CoT_Zero-Shot-R.ipynb                # Zero-shot / in-context learning sweep (Table 3b)
+└── Few-Shot_CoT_Zero-Shot.ipynb                  # Zero-shot / in-context learning sweep
 ```
 
 ## Dataset
@@ -44,7 +44,6 @@ Experiments were run on Google Colab with an NVIDIA A100 GPU. The 7B-parameter m
 1. Clone this repository and ensure the three CSV files are in the working directory.
 2. Open `Language_Identification_Fine_Tuning_LLM.ipynb` for fine-tuning experiments (4-way, leave-one-dialect-out, binary pairs).
 3. Open `Few-Shot_CoT_Zero-Shot.ipynb` for the zero-shot / in-context learning sweep. This notebook is resumable: it skips any condition whose result file already exists in `./results/`.
-4. All notebooks include a pre-flight check confirming no prompt example or vocabulary item overlaps with the validation or test sets.
 
 ## Key Results
 
