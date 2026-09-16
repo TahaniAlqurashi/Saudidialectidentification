@@ -15,8 +15,7 @@ This project evaluates transformer-based language models on four-way Saudi Arabi
 ```
 .
 ├── README.md
-├── requirements.txt
-├── train_dialectdf.csv                          # 3,014 samples (80%)
+├── train_dialectdf.csv                           # 3,014 samples (80%)
 ├── val_dialectdf.csv                             # 377 samples (10%)
 ├── test_dialectdf.csv                            # 377 samples (10%)
 ├── Language_Identification_Fine_Tuning_LLM.ipynb # Main experiments: 4-way, 3-way, binary fine-tuning
@@ -41,18 +40,6 @@ The corpus (3,768 entries; Hijazi 1,033, Najdi 1,007, Hasawi 920, Janobi 808) or
 2. Open `Language_Identification_Fine_Tuning_LLM.ipynb` for fine-tuning experiments (4-way, leave-one-dialect-out, binary pairs).
 3. Open `Few-Shot_CoT_Zero-Shot.ipynb` for the zero-shot / in-context learning sweep. This notebook is resumable: it skips any condition whose result file already exists in `./results/`.
 
-## Key Results
-
-| Model | Parameters | Accuracy | Macro F1 |
-|---|---|---|---|
-| QARIB | 110M | 43.77 ± 1.06% | 43.06 ± 1.21% |
-| MARBERT | 135M | 42.35 ± 1.34% | 41.65 ± 2.03% |
-| CAMeLBERT-DA | 110M | 36.52 ± 2.86% | 36.42 ± 2.79% |
-| AraBERTv2 | 135M | 36.52 ± 1.10% | 35.93 ± 1.33% |
-| ALLaM-7B | 7B | 33.51 ± 1.46% | 33.10 ± 1.53% |
-| Qwen2.5-7B | 7B | 28.21 ± 1.51% | 27.92 ± 1.75% |
-
-Mean ± standard deviation across three seeds (42, 123, 2024). Full results, statistical significance testing, and task-complexity analysis (binary, leave-one-dialect-out) are reported in the paper.
 
 ## Citation
 
