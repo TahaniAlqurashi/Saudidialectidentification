@@ -31,13 +31,9 @@ The corpus (3,768 entries; Hijazi 1,033, Najdi 1,007, Hasawi 920, Janobi 808) or
 
 ## Requirements
 
-See `requirements.txt`. Install with:
+- Each notebook installs its own required packages in its first few cells -- just run them in order.
 
-```bash
-pip install -r requirements.txt --break-system-packages
-```
-
-Experiments were run on Google Colab with an NVIDIA A100 GPU. The 7B-parameter models (ALLaM-7B, Qwen2.5-7B) require 8-bit quantization (`bitsandbytes`) and were fine-tuned with LoRA; the smaller encoders were fully fine-tuned.
+- Experiments were run on Google Colab with an NVIDIA A100 GPU. The 7B-parameter models (ALLaM-7B, Qwen2.5-7B) require 8-bit quantization (`bitsandbytes`) and were fine-tuned with LoRA; the smaller encoders were fully fine-tuned.
 
 ## Usage
 
